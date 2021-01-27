@@ -1,0 +1,60 @@
+﻿body{
+	background:url(../imagenes/xd.jpg);
+	background-attachment:fixed;
+}
+h2{/*géneros*/
+	font-family:Impact;
+	font-size:25px;
+}
+h2,.ewe{/*Título y subtítulos*/
+	width:25%;
+	background:rgb(99,253,227,.7);
+	position:relative;
+	max-width:300px;
+	padding:10px;
+	border-radius:10px;
+}
+.uwu{/*Submenú*/
+	font-size:18px;
+	color:black;
+	font-family:Arial;
+	text-decoration:none;
+	width:15%;
+	background:rgb(99,253,227,.7);
+	list-style-type:square;
+	border-radius:5px;
+	padding:5px;
+}
+.uwu:hover{
+	text-decoration:underline;
+}
+.ewe{/*Menú*/
+	font-family:Arial Black;
+	list-style-type:none;
+	border-radius:10px;
+}
+.menu{/*Menú de navegación*/
+	font-size:30px;
+	background:#DF0101;
+	list-style:none;
+}
+.menu li {
+	display:inline-block;
+}
+.menu li a{
+	padding:10px 10px;
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	font-family:sans-serif;
+}
+.menu li a:hover{
+	background:#000000;
+	color:#fff;
+}
+footer{/*pie de página*/
+	font-size:25px;
+	background:#000000;
+	color:#fff;
+	border-radius:10px;
+}
