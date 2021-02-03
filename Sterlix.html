@@ -4,8 +4,10 @@
  
  <head>
   <title>Sterlix</title>
+  <meta name="viewport" content="width-device-width, users-scaleable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="short cut icon" type="image/x-icon" href="imagenes/video.png">
   <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="css/Bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/Style.css">
  </head>
 
@@ -25,36 +27,85 @@
      </ul>
   </header>
 
-<section>
-    <secction>
-    <article>
-  <h2 class="gg">Noticias</h2>
-  <br/>
-    <h3 class="owo">Genshin Impact recibirá su actualización 1.3 el próximo 3 de febrero</h3>
-    <p class="xd">La nueva actualización de Genshin Impact se muestra en un nuevo tráiler en el que, además de mostrar sus novedades, se desvela que se lanzará a principios del mes que viene.</p>
-    <img src="imagenes/noticia 1.jpg" alt="Genshin Impact" title="Genshin Impact" class="imagenes">
-   <br/>
-    <h3 class="owo">Cyberpunk 2077 ha tenido el mejor lanzamiento digital de la historia de los videojuegos</h3>
-    <p class="xd">SuperData asegura que las devoluciones no han afectado significativamente a las ventas de Cyberpunk 2077. Otros juegos como Fortnite, GTA Online o Among Us también rompieron récords en diciembre.</p>
-    <img src="imagenes/cyber.jpg" alt="Cyberpunk" title="Cyberpunk" class="imagenes">
-   <br/>
-    <h3 class="owo">Galactic Civilizations 3 gratis para PC ya disponible en Epic Games Store</h3>
-    <p class="xd">Es un juego de estrategia y simulación con diferentes razas de la galaxia; la próxima semana se regalará el metroidvania Dandara: Trials of Fear Edition.</p>
-    <img src="imagenes/galactic.jpg" alt="Galactic Civilizations" title="Galactic Civilizations" class="imagenes">
-   <br/>
-    <h3 class="owo">GTA Online: Llega el nuevo Vapid Slamtruck, recompensas dobles, descuentos y más</h3>
-    <p class="xd">Los jugadores recibirán también una camiseta Faded Vapid gratis, bonificaciones y velocidad duplicada en investigaciones de Tráfico de armas, entre otras novedades.</p>
-    <img src="imagenes/gta.jpg" alt="GTA V" title="GTA V" class="imagenes">
-    </article>
-    <aside>
+
+ <br/>
+
+ <div class="container">
+    <br/>
+
+    <div class="col-md-12">
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="imagenes/juegos.png"class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>Nuevos lanzamientos</h3>
+                        <a href="#"><p>PC PS4 XBOX</p></a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="imagenes/maxresdefaultxd.jpg"class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>Tráilers</h3>
+                        <a href="#"><p>En HD</p></a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="imagenes/dishonored.jpg"class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3>Descúbrelo aquí</h3>
+                        <a href="#"><p>xd</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <br/>
+ <br/>
+ <br/>
+
+<div class="container">
+    <section class="main row">
+        <article class="col-md-9">
+            <h2 class="gg">Noticias</h2>
+    <br/>
+        <h3 class="owo">Genshin Impact recibirá su actualización 1.3 el próximo 3 de febrero</h3>
+            <p class="xd">La nueva actualización de Genshin Impact se muestra en un nuevo tráiler en el que, además de mostrar sus novedades, se desvela que se lanzará a principios del mes que viene.</p>
+            <img src="imagenes/noticia 1.jpg" alt="Genshin Impact" title="Genshin Impact" class="imagenes">
+    <br/>
+        <h3 class="owo">Cyberpunk 2077 ha tenido el mejor lanzamiento digital de la historia de los videojuegos</h3>
+            <p class="xd">SuperData asegura que las devoluciones no han afectado significativamente a las ventas de Cyberpunk 2077. Otros juegos como Fortnite, GTA Online o Among Us también rompieron récords en diciembre.</p>
+            <img src="imagenes/cyber.jpg" alt="Cyberpunk" title="Cyberpunk" class="imagenes">
+    <br/>
+        <h3 class="owo">Galactic Civilizations 3 gratis para PC ya disponible en Epic Games Store</h3>
+            <p class="xd">Es un juego de estrategia y simulación con diferentes razas de la galaxia; la próxima semana se regalará el metroidvania Dandara: Trials of Fear Edition.</p>
+            <img src="imagenes/galactic.jpg" alt="Galactic Civilizations" title="Galactic Civilizations" class="imagenes">
+    <br/>
+        <h3 class="owo">GTA Online: Llega el nuevo Vapid Slamtruck, recompensas dobles, descuentos y más</h3>
+            <p class="xd">Los jugadores recibirán también una camiseta Faded Vapid gratis, bonificaciones y velocidad duplicada en investigaciones de Tráfico de armas, entre otras novedades.</p>
+            <img src="imagenes/gta.jpg" alt="GTA V" title="GTA V" class="imagenes">
+        </article>
         
-    
-</section>
+        <aside class="col-md-3">
+            <img src="imagenes/anuncio.jpg" alt="Anuncio" title="Anuncio" class="anuncio">
+        </aside>
+    </section>
+</div>
      
 <footer>
     <p><center>Edwin Márquez - Strappberry</center></p> 
 </footer>
  
+<script src="js/jquery.js"></script>
+<script src="js/Bootstrap.min.js"></script>
  </body
 
 </html>
