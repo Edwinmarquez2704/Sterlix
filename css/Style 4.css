@@ -6,55 +6,92 @@ footer{
 	font-size:25px;
 	background:#000000;
 	color:#fff;
-	border-radius: 40px;
+	border-radius: 10px;
 }
-p{ /*Texto*/
-	width:65%;
-	font-family:Arial;
+.menu_bar{
+	display:none;
 }
-.ewe{/*Menú de texto*/
-	font-family:Arial Black;
-	border-radius:10px;
-	background:rgb(99,253,227,.7);
-	width:15%;
-	position:relative;
-	left:490px;
+header{
+	width:100%;
 }
-
-.menu{ /*Menú de navegación*/
-	font-size:30px;
+header nav{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
 	background:#DF0101;
+}
+header nav ul{
+	overflow:hidden;
 	list-style:none;
 }
-.menu li{
-	display:inline-block;
+header nav ul li{
+	float:left;
 }
-.menu li a{
-	padding:10px 10px;
-	display:inline-block;
-	text-decoration:none;
+header nav ul li a{
 	color:#fff;
-	font-family:sans-serif;
+	padding:10px 10px;
+	display:block;
+	text-decoration:none;
+	font-family:Sans-Serif;
+	font-size:30px;
 }
- .menu a:hover{
+header nav ul li a:hover{
 	background:#000000;
 	color:#fff;
-  }
+	text-decoration:none;
+}
+@media screen and (max-width:800px){
+	header nav{
+		width:80%;
+		height:100%;
+		margin:0;
+		left:-100%;
+		position:fixed;
+	}
+	header nav ul li{
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background:#DF0101;
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		font-size:30px;
+		font-family:Impact;
+		text-decoration:none;
+		color:#fff;
+	}
+	.menu_bar span{
+		float:right;
+		font-size:30px;
+	}
+}
 .imagenxd{ /*imágenes*/
 	padding:5px;
+	width:65%;
 	border:solid #000000;
-	position:relative;
-	top:10px;
-	left:535px;
 }
 .imagenxq{
 	padding:5px;
+	width:30%;
 	border:solid #000000;
-	position:relative;
-	top:10px;
-	left:650px;
 }
-.gg{
+.xd,.gg{ /*Títulos y Subtítulos*/
+	width:90%;
+	background:rgb(99,253,227,.7);
+	position:relative;
+	font-size:17px;
+	font-family:Arial;
+	max-width:900px;
+	margin:auto;
+	padding:15px;
+}
+.gg{/*Títulos*/
 	font-family:Impact;
 	font-size:25px;
 	background:rgb(99,253,227,.7);
@@ -64,7 +101,7 @@ p{ /*Texto*/
 	padding:15px;
 }
 .xd{/*Subtítulos*/
-	width:65%;
+	width:90%;
 	background:rgb(99,253,227,.7);
 	position:relative;
 	font-size:17px;
@@ -72,4 +109,7 @@ p{ /*Texto*/
 	max-width:900px;
 	margin:auto;
 	padding:15px;
+}
+.btn .btn-succes{
+	margin:5px auto;
 }

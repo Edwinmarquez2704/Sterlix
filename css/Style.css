@@ -8,36 +8,71 @@ footer{/*Pie de página*/
 	color:#fff;
 	border-radius:10px;
 }
-.uwu{/*Submenú*/
-	font-size:18px;
-	color:#0FBEC8;
-	font-family:Arial;
-	text-decoration:none;
+.menu_bar{
+	display:none;
 }
- .uwu:hover{
-	text-decoration:underline;
- }
-.menu{ /*Menú de navegación*/
-	font-size:30px;
+header{
+	width:100%;
+}
+header nav{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
 	background:#DF0101;
+}
+header nav ul{
+	overflow:hidden;
 	list-style:none;
 }
-.menu li{
-	display:inline-block;
- }
- .menu li a{
-	  padding:10px 10px;
-	  display:inline-block;
-	  text-decoration:none;
-	  color:#fff;
-	  font-family:sans-serif;
- }
- .menu li a:hover{
-	  background:#000000;
-	  color:#fff;
- }
-.xd,h2,.owo{ /*Texto de las noticias*/
-	width:25%;
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	color:#fff;
+	padding:10px 10px;
+	display:block;
+	text-decoration:none;
+	font-family:Sans-Serif;
+	font-size:30px;
+}
+header nav ul li a:hover{
+	background:#000000;
+	color:#fff;
+	text-decoration:none;
+}
+@media screen and (max-width:800px){
+	header nav{
+		width:80%;
+		height:100%;
+		margin:0;
+		left:-100%;
+		position:fixed;
+	}
+	header nav ul li{
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background:#DF0101;
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		font-size:30px;
+		font-family:Impact;
+		text-decoration:none;
+		color:#fff;
+	}
+	.menu_bar span{
+		float:right;
+		font-size:30px;
+	}
+}
+.xd,h2,.owo{ /*Cuerpo de las noticias*/
+	width:50%;
 	background:rgb(99,253,227,.7);
 	position:relative;
 	font-size:17px;
@@ -46,27 +81,42 @@ footer{/*Pie de página*/
 	margin:auto;
 	padding:15px;
 }
-.xd{
+.xd{/*Texto de las noticias*/
 	padding:15px;
-	width:25%;
+	width:55%;
 }
 .imagenes{
-	width:8%;
+	width:17%;
 	position:relative;
 	padding:5px;
 	border:solid #000000;
 	bottom:140px;
-	left:25%;
+	left:4%;
 }
 .ewe{/*Título del menú*/
 	font-size:19px;
 	font-family:Arial
 }
 .owo{ /*Título de noticias*/
-	width:25%;
+	width:55%;
 	font-family:Arial Black;
 }
 .gg{ /*Noticias*/
 	font-family:Impact;
 	font-size:25px;
+	width:55%;
+}
+.anuncio{
+	position:relative;
+	bottom:200%;
+	left:5%;
+	
+}
+a p{
+	color:#fff;
+	text-decoration:none;
+}
+a p:hover{
+	text-decoration:underline;
+	color:#fff;
 }

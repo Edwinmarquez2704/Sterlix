@@ -6,10 +6,10 @@ footer{
 	font-size:25px;
 	background:#000000;
 	color:#fff;
-	border-radius: 40px;
+	border-radius: 10px;
 }
 .xd,.gg{/*Texto*/
-	width:65%;
+	width:90%;
 	background:rgb(99,253,227,.7);
 	position:relative;
 	font-size:17px;
@@ -18,40 +18,83 @@ footer{
 	margin:auto;
 	padding:15px;
 }
-.menu{ /*Menú de navegación*/
-	font-size:30px;
+.menu_bar{
+	display:none;
+}
+header{
+	width:100%;
+}
+header nav{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
 	background:#DF0101;
+}
+header nav ul{
+	overflow:hidden;
 	list-style:none;
 }
-.menu li{
-	display:inline-block;
+header nav ul li{
+	float:left;
 }
-.menu li a{
-	padding:10px 10px;
-	display:inline-block;
-	text-decoration:none;
+header nav ul li a{
 	color:#fff;
-	font-family:sans-serif;
+	padding:10px 10px;
+	display:block;
+	text-decoration:none;
+	font-family:Sans-Serif;
+	font-size:30px;
 }
- .menu a:hover{
-	 background:#000000;
-	 color:#fff;
-  }
+header nav ul li a:hover{
+	background:#000000;
+	color:#fff;
+	text-decoration:none;
+}
+@media screen and (max-width:800px){
+	header nav{
+		width:80%;
+		height:100%;
+		margin:0;
+		left:-100%;
+		position:fixed;
+	}
+	header nav ul li{
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background:#DF0101;
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		font-size:30px;
+		font-family:Impact;
+		text-decoration:none;
+		color:#fff;
+	}
+	.menu_bar span{
+		float:right;
+		font-size:30px;
+	}
+}
 .imagenxd{/*imágenes*/
 	padding:5px;
+	width:50%;
 	border:solid #000000;
-	position:relative;
-	top:10px;
-	left:535px;
 }
 .imagenxq{
 	padding:5px;
+	width:50%;
 	border:solid #000000;
-	position:relative;
-	top:10px;
-	left:650px;
 }
 .gg{/*Subtítulos*/
 	font-family:Impact;
 	font-size:25px;
+}
+.btn .btn-succes{
+	margin:5px auto;
 }

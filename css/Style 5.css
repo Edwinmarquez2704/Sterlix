@@ -26,35 +26,85 @@ h2,.ewe{/*Título y subtítulos*/
 	padding:5px;
 }
 .uwu:hover{
-	text-decoration:underline;
+	text-decoration:none;
+	color:#A56504;
 }
 .ewe{/*Menú*/
 	font-family:Arial Black;
 	list-style-type:none;
 	border-radius:10px;
 }
-.menu{/*Menú de navegación*/
-	font-size:30px;
+.menu_bar{
+	display:none;
+}
+header{
+	width:100%;
+}
+header nav{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
 	background:#DF0101;
+}
+header nav ul{
+	overflow:hidden;
 	list-style:none;
 }
-.menu li {
-	display:inline-block;
+header nav ul li{
+	float:left;
 }
-.menu li a{
-	padding:10px 10px;
-	display:inline-block;
-	text-decoration:none;
+header nav ul li a{
 	color:#fff;
-	font-family:sans-serif;
+	padding:10px 10px;
+	display:block;
+	text-decoration:none;
+	font-family:Sans-Serif;
+	font-size:30px;
 }
-.menu li a:hover{
+header nav ul li a:hover{
 	background:#000000;
 	color:#fff;
+	text-decoration:none;
+}
+@media screen and (max-width:800px){
+	header nav{
+		width:80%;
+		height:100%;
+		margin:0;
+		left:-100%;
+		position:fixed;
+	}
+	header nav ul li{
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		background:#DF0101;
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		font-size:30px;
+		font-family:Impact;
+		text-decoration:none;
+		color:#fff;
+	}
+	.menu_bar span{
+		float:right;
+		font-size:30px;
+	}
 }
 footer{/*pie de página*/
 	font-size:25px;
 	background:#000000;
 	color:#fff;
 	border-radius:10px;
+}
+.anuncio{
+	position:relative;
+	top:200%;
+	left:5%;
 }
